@@ -40,6 +40,8 @@ class ProductController extends Controller
         else{
             return ["result"=>"Opreation failed"];
         }
-        // return $id;
+    }
+    function getProduct($id){
+        return Product::find($id);
     }
 }
